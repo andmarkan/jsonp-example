@@ -1,0 +1,26 @@
+<input name="user" value="<%= this.collection.getAttribute('user') %>"></input>
+
+<select name="endpoint">
+  <option value="stream" >
+    Stream
+  </option>
+
+  <% if (this.collection.getAttribute('endpoint')==='faves') { %>
+    <option value="faves" selected>
+  <% } else { %>
+    <option value="faves" >
+  <% } %>
+
+    Faves
+  </option>
+</select>
+
+<button>Fetch!</button>
+
+<p>
+  #photos: <span><%= this.collection.size() %></span>
+</p>
+
+<p>
+  Note: You can find a Twitter user ID <a href="http://idgettr.com/">here</a>
+</p>

@@ -1,0 +1,23 @@
+body {
+  font: 500 14px/21px 'Helvetica Neue', Helvetica, Arials;
+  padding: 20px;
+}
+
+article {
+  width: 260px;
+  height: 380px;
+  padding: 5px;
+  margin: 5px;
+  float: left;
+  text-align: center;
+
+  background-color: #cccccc;
+}
+
+article img {
+  margin: 0 auto;
+}
+
+select, button {
+  margin: 10px;
+}

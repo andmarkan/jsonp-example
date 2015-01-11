@@ -1,0 +1,20 @@
+
+<% _.each(photos, function(p) { %>
+
+  <article>
+    <h2><%= p.title %> </h2>
+    <a href="<%= p.link %>"><img src="<%= p.media.m %>" /></a>
+    <p><%= p.author %> </br></p>
+    <!--
+    <p><%= p.author_id %> </br></p>
+    -->
+    <%= Date.parse(p.date_taken).toLocaleString() %> </br>
+    <%= Date.parse(p.published).toLocaleString() %> </br>
+
+    <% if (p.tags) { %>
+      <h3>tags</h3>
+      <%= p.tags %> </br>
+    <% } %>
+  </article>
+  
+<% }); %>
